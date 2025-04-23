@@ -15,7 +15,39 @@
     <title> Gemini Generate Images App </title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline"> Hello, World! </h1>
+
+    <div class="wrapper">
+      <div class="flex-container">
+
+        <!-- Left Controls -->
+        <div class="controls">
+          <div class="heading">
+            <i class="ri-bard-fill"></i>
+            <h2 class="text-white"> AI Image Generator With Gemini </h2>
+          </div>
+
+          <!--Prompt Input -->
+
+          <div class="prompt-container">
+            <textarea name="" id="promptInput" class="form-input" placeholder="Enter your image prompt"></textarea>
+
+            <div class="example-prompts">
+              <!-- Exmple prompts -->
+              <p class="example-label"> Hints Prompts </p>
+              <div class="example-chips">
+                <span class="example-chip" onclick="userExamplePrompt('A futuristic city skyline at sunset')"> A futuristic city skyline at sunset </span>
+                <span class="example-chip" onclick="userExamplePrompt('A serene landscape with mountains and a lake')"> A serene landscape with mountains and a lake </span>
+                <span class="example-chip" onclick="userExamplePrompt('A close-up of a flower with dew drops')"> A close-up of a flower with dew drops </span>
+                <span class="example-chip" onclick="userExamplePrompt('A fantasy creature in a magical forest')"> A fantasy creature in a magical forest </span>
+                <span class="example-chip" onclick="userExamplePrompt('A vintage car on a winding road')"> A vintage car on a winding road </span>
+                <span class="example-chip" onclick="userExamplePrompt('A cozy cabin in the woods during winter')"> A cozy cabin in the woods during winter </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./src/JS/main.js"></script>
   </body>
 </html>

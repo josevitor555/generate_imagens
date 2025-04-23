@@ -7,3 +7,139 @@
   font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(45deg, #27282D, #232428);
+}
+
+.wrapper .flex-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  max-height: calc(100vh - 10vh);
+  height: 100%;
+  /* background: linear-gradient(45deg, #27282D, #252527); */
+  background: linear-gradient(45deg, #252527, #27282D);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.wrapper .flex-container .controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.wrapper .flex-container .controls .heading {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.wrapper .flex-container .controls .heading i {
+  font-size: 22px;
+  background: #FFF2D7;
+  font-weight: 600;
+  color: #1d1d1d;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.wrapper .flex-container .controls .heading h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFF2D7;
+}
+
+.wrapper .flex-container .controls .prompt-container {
+  width: 100%;
+}
+
+.wrapper .flex-container .controls .prompt-container .form-input {
+  background: #33353D;
+  font-size: 1rem;
+  resize: vertical;
+  width: 100%;
+  max-height: 300px;
+  min-height: 200px;
+  padding: 1rem;
+  border: 1px solid #FFF2D7;
+  color: #FFF2D7;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  --sb-track-color: transparent;
+  --sb-thumb-color: #FFF2D7;
+  --sb-size: 6px;
+}
+
+.wrapper .flex-container .controls .prompt-container .form-input::-webkit-scrollbar {
+  width: var(--sb-size);
+  cursor: pointer;
+}
+
+.wrapper .flex-container .controls .prompt-container .form-input::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wrapper .flex-container .controls .prompt-container .form-input::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wrapper .flex-container .controls .prompt-container .form-input:focus {
+  outline: none;
+  border-color: #FFF2D7;
+}
+
+.wrapper .flex-container .controls .prompt-container .example-prompts {
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.wrapper .flex-container .controls .prompt-container .example-prompts .example-label {
+  font-size: 1rem;
+  color: #fafafa;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  opacity: .6;
+}
+
+.wrapper .flex-container .controls .prompt-container .example-prompts .example-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: .25rem;
+}
+
+.wrapper .flex-container .controls .prompt-container .example-prompts .example-chips .example-chip {
+  display: inline-block;
+  padding: .375rem .75rem;
+  background: transparent;
+  border: 2px solid #FFF2D7;
+  border-radius: 5px;
+  color: #FFF2D7;
+  font-size: .90rem;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.wrapper .flex-container .controls .prompt-container .example-prompts .example-chips .example-chip:hover {
+  background: #FFF2D7;
+  color: #1d1d1d;
+  cursor: pointer;
+}
