@@ -35,19 +35,74 @@
               <!-- Exmple prompts -->
               <p class="example-label"> Hints Prompts </p>
               <div class="example-chips">
-                <span class="example-chip" onclick="userExamplePrompt('A futuristic city skyline at sunset')"> A futuristic city skyline at sunset </span>
-                <span class="example-chip" onclick="userExamplePrompt('A serene landscape with mountains and a lake')"> A serene landscape with mountains and a lake </span>
-                <span class="example-chip" onclick="userExamplePrompt('A close-up of a flower with dew drops')"> A close-up of a flower with dew drops </span>
-                <span class="example-chip" onclick="userExamplePrompt('A fantasy creature in a magical forest')"> A fantasy creature in a magical forest </span>
+                <span class="example-chip" onclick="userExamplePrompt('A futuristic city skyline at sunset')"> A futuristic city </span>
+                <span class="example-chip" onclick="userExamplePrompt('A serene landscape with mountains and a lake')"> A serene landscape </span>
+                <span class="example-chip" onclick="userExamplePrompt('A close-up of a flower with dew drops')"> A close-up of a flower </span>
+                <span class="example-chip" onclick="userExamplePrompt('A fantasy creature in a magical forest')"> A fantasy creature </span>
                 <span class="example-chip" onclick="userExamplePrompt('A vintage car on a winding road')"> A vintage car on a winding road </span>
-                <span class="example-chip" onclick="userExamplePrompt('A cozy cabin in the woods during winter')"> A cozy cabin in the woods during winter </span>
+                <span class="example-chip" onclick="userExamplePrompt('A cozy cabin in the woods during winter')"> A cozy cabin </span>
               </div>
             </div>
+          </div>
+
+          <!-- Settings Container -->
+          <div class="settings-container">
+            <div class="select-group">
+              <div class="select-item">
+                <div class="form-label"> Aspect Ratio </div>
+
+                <select id="aspectRatio" class="form-select">
+                  <option value="1:1"> 1:1 (Square) </option>
+                  <option value="16:9"> 16:9 (Widescreen) </option>
+                  <option value="4:3"> 4:3 (Classic) </option>
+                  <option value="9:16"> 9:16 (Portrait) </option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <div class="form-label"> Number of Images </div>
+
+                <select id="imageCount" class="form-select">
+                  <option value="1"> 1 Image </option>
+                  <option value="2"> 2 Images </option>
+                  <option value="3"> 3 Images </option>
+                  <option value="4"> 4 Images </option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button class="form-button">
+              <i class="ri-magic-fill"></i>
+              <span class="button-text"> Generate Images </span>
+            </button>
+
+            <!-- Error Message -->
+            <div class="error-container" id="errorContainer hidden">
+              <p id="errorMessage" class="error-message"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Images Output -->
+        <div class="images">
+          <div class="loader" id="loader hidden">
+            <!-- Spinner -->
+             <div class="spinner"></div>
+             <p> Generating Images... </p>
+
+             <!-- Output of generated images -->
+             <div id="output" class="output hidden">
+              <div class="output-images">
+                <!-- Output Images will be displayed here -->
+              </div>
+             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script type="module" src="./src/JS/main.js"></script>
+    <!-- JavaScript -->
+    <script src="./src/JS/main.js"></script>
   </body>
 </html>
