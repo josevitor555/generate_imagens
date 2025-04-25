@@ -27,7 +27,6 @@
           </div>
 
           <!--Prompt Input -->
-
           <div class="prompt-container">
             <textarea name="" id="promptInput" class="form-input" placeholder="Enter your image prompt"></textarea>
 
@@ -72,13 +71,13 @@
             </div>
 
             <!-- Generate Button -->
-            <button class="form-button">
+            <button class="form-button" onclick="generateImages()">
               <i class="ri-magic-fill"></i>
               <span class="button-text"> Generate Images </span>
             </button>
 
             <!-- Error Message -->
-            <div class="error-container" id="errorContainer hidden">
+            <div class="error-container hidden" id="errorContainer">
               <p id="errorMessage" class="error-message"></p>
             </div>
           </div>
@@ -86,17 +85,17 @@
 
         <!-- Images Output -->
         <div class="images">
-          <div class="loader" id="loader hidden">
-            <!-- Spinner -->
-             <div class="spinner"></div>
-             <p> Generating Images... </p>
 
-             <!-- Output of generated images -->
-             <div id="output" class="output hidden">
-              <div class="output-images">
-                <!-- Output Images will be displayed here -->
-              </div>
-             </div>
+          <!-- Loader -->
+          <div class="loader hidden" id="loader">
+            <!-- Spinner -->
+            <div class="spinner"></div>
+            <p> Generating Images... </p>
+          </div>
+          
+          <!-- Output of generated images -->
+          <div id="output" class="output hidden">
+            <!-- Generated images will inserted here -->
           </div>
         </div>
       </div>
