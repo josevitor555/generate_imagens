@@ -45,8 +45,11 @@ async function generateImages() {
   const aspectRatio = document.getElementById("aspectRatio").value;
   const imageCount = parseInt(document.getElementById("imageCount").value, 10);
   const loader = document.getElementById("loader");
-  console.log("CLASSES DO LOADER:", loader.classList);
   const outputContainer = document.getElementById("output");
+  const initialState = document.getElementById('initial-state');
+
+  // Hide initial state message
+  initialState.classList.add("hidden");
 
   // Clear previous error message
   clearError();
