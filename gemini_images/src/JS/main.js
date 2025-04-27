@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = "AIzaSyBpbLLD_vsv36NCRwCXC71iC8Cce5QPuo4";
+const GEMINI_API_KEY = "YOUR_API_KEY";
 const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${GEMINI_API_KEY}`;
 
 // Inject Example prompts
