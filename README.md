@@ -13,5 +13,5 @@ https://buymeacoffee.com/josevitor555
 ### Curiosidade:
 Este mini projeto front-end faz parte de um micro saas que estou desenvolvendo em segredo.
 
-### Imagens
+### Imagem
 ![Imagem do WhatsApp de 2025-04-25 à(s) 11 32 31_496a85cf](https://github.com/user-attachments/assets/a759d6a5-b5df-4b75-8ac3-9c536a09e1d7)
